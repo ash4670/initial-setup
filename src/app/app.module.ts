@@ -5,14 +5,17 @@ import { NgModule   } from '@angular/core';
 import {HttpModule} from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
 import {FlexLayoutModule} from '@angular/flex-layout' ;
 import 'hammerjs' ;
 import { AppComponent } from './app.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule ,
     MatToolbarModule,
-    FlexLayoutModule
+    FlexLayoutModule,MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
