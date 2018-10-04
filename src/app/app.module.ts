@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule   } from '@angular/core';
 import {HttpModule} from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
@@ -42,7 +43,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     HttpModule ,
     MatToolbarModule,
     FlexLayoutModule,MatListModule,MatGridListModule,MatCardModule,MatButtonModule
-    ,AppRoutingModule
+    ,AppRoutingModule,HttpClientModule
   ],
   providers: [DishService],
   bootstrap: [AppComponent]

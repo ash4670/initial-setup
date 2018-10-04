@@ -1,4 +1,5 @@
 export class Dish {
+  id: number ;
   name: String ;
   image: String ;
   category: String ;
